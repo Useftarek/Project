@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +8,7 @@
     list-style: none;
     text-decoration: none;
 }
+/* start nav */
 
 header{
     position: fixed;
@@ -16,6 +20,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 4rem;
+    font-family: "Yantramanav", sans-serif;
 }
 
 .logo-name{
@@ -24,11 +29,15 @@ header{
 }
 header .logo-name i {
     padding-right: 3rem;
+    cursor: pointer;
 }
 .logo-name h2
  {
     font-size: 30px;
     font-weight: 400;
+    font-style: italic;
+    cursor: pointer;
+    font-family: "Gochi Hand", cursive;
  }
 .logo img {
     max-width: 120px;
@@ -82,9 +91,12 @@ header .logo-name i {
     transition: 0.41s all ease;
     cursor: pointer;
 }
+/* endnav */
+/* start hero-section */
 
 section {
     padding: 5% 10%;
+    font-family: "Yantramanav", sans-serif;
 }
 
 .hero-section {
@@ -167,10 +179,126 @@ section {
     padding: 12px 12px;
     transition: .5s all ;
 }
+.loader{
+    position: absolute;
+    bottom: 100px;
+    width: 300px;
+    height: 2px;
+    background: #ffffff57;
+    border-radius: 99px;
+}
+
+
+.progress {
+    position: absolute;
+    bottom: 0px;
+    width: 300px;
+    height: 2px;
+    border-radius: 1rem;
+    width: 0;
+    background: #111;
+    animation: 5s progress linear infinite;
+}
+
+
+@keyframes progress {
+    to {
+        width: 300px;
+    }
+}
+/* end-hero.section */
+
+/* start featured-section */
+
+
+.featured-section {
+    height: 100vh;
+    padding-top: 6rem;
+    
+    
+}
+
+.featured-section .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;  
+    cursor: pointer;
+    
+}
+
+.featured-section .image-container .futared {
+    height: 100%;
+    width:700px;
+}
+
+.featured-section .image-container .futared img {
+    width: calc((100% - 0rem)/1);
+}
+
+.featured-section .image-container .futared .layer {
+    transform: translateY(4rem);
+    padding-left: 2rem;
+    cursor:text
+}
+
+.featured-section .image-container .futared .layer h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Gochi Hand", cursive;
+}
+
+.featured-section .image-container .futared .icon {
+    position: relative;
+}
+.featured-section .image-container .futared .icon i {
+    position: absolute;
+    top: -80px;
+    right: 60px;
+    background: white;
+    border: 2px solid white;
+    border-radius: 50px;   
+    padding: 15px 15px;
+}
+
+.featured-section .image-container .futared .icon2 {
+    position: relative;
+}
+
+.featured-section .image-container .futared .icon2 i {
+    position: absolute;
+    top: -80px;
+    right: 60px;
+    color: white;
+    background: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px;   
+    padding: 15px 15px;
+}
+
+.featured-section .image-container .futared .icon i:hover {
+    color: white;
+    background: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+.featured-section .image-container .futared .icon2 i:hover {
+    background: white;
+    color: #111;
+    border: 2px solid white;
+    transition: 1s;
+}
 
 
 
 
+
+
+
+
+
+
+/* start media query */
 @media (min-width:100px) and (max-width:768px) {
 
     header{
@@ -198,9 +326,22 @@ section {
     .scroll {
         display: none;
     }
+
+    .loader {
+        display: none;
+    }
+    .featured-section .image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .featured-section .image-container .futared img {
+        width: calc((100% - 0rem)/1);
+    }
 }
 
-@media (min-width:769px) and (max-width:1200px) {
+@media (min-width:769px) and (max-width:1440px) {
     .navmenu {
         display: none;
     }
@@ -219,9 +360,23 @@ section {
     .scroll {
         display: none;
     }
+
+    .loader {
+        display: none;
+    }
+
+    .featured-section .image-container {
+        
+        flex-wrap: nowrap;
+        width: calc((100% - 0rem)/1);
+    }
+
+
+    
+   
 }
 
-@media (min-width:1200px) and (max-width:1400px) {
+@media (min-width:1200px) and (max-width:2000px) {
     .navmenu {
         display: flex;
     }
@@ -237,4 +392,7 @@ section {
     .hero-section {
         background-position: center; 
     }
+
+    
 }
+
