@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -47,13 +48,13 @@ header .logo-name i {
 
 .navmenu{
     display: flex;
+    gap: 2.5rem;
 }
 
 .navmenu a {
     color: #1d1d1d;
     font-size: 13px;
     text-transform: capitalize;
-    padding: 20px 15px;
     font-weight: 800;
     transition: .42s all ease;
     position: relative;
@@ -70,7 +71,7 @@ header .logo-name i {
     width: 0%;
     left: 0;
     bottom:0;
-    top: 37px;
+    top: 17px;
     transition: 0.3s;
 }
 
@@ -213,7 +214,7 @@ section {
 
 .featured-section {
     height: 100vh;
-    padding-top: 6rem;
+    
     
     
 }
@@ -289,11 +290,72 @@ section {
     transition: 1s;
 }
 
+/* end featured-section */
+
+/* start Products section */
 
 
+.products-section {
+    text-align: center;
+    padding-top: 1.5rem;
+    height: 100vh;
+}
 
+.products-section .texter {
+    
+}
 
+.products-section .texter p {
+    font-size: 11px;
+    font-weight: 500;
+    color: #727272;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
 
+}
+
+.products-section .texter h2 {
+    font-family: "Yantramanav", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 60px;
+}
+
+.products-section ul {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.products-section a {
+    color: #1d1d1d;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: .42s all ease;
+    position: relative;
+    
+}
+
+.products-section a::after {
+    content: "";
+    position: absolute;
+    background-color:rgb(0, 0, 0);
+    height: 2px;
+    width: 0%;
+    left: 0%;
+    bottom:0;
+    top: 20px;
+    
+    
+}
+
+.products-section a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
 
 
 
@@ -380,19 +442,5 @@ section {
     .navmenu {
         display: flex;
     }
-
-  
-    .hero-text {
-        position: relative;
-        right: 0;
-        text-align: center;
-        padding-bottom: 0;
-    }
-
-    .hero-section {
-        background-position: center; 
-    }
-
-    
 }
 
