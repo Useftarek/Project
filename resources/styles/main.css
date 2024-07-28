@@ -212,12 +212,6 @@ section {
 /* start featured-section */
 
 
-.featured-section {
-    height: 100vh;
-    
-    
-    
-}
 
 .featured-section .image-container {
     display: flex;
@@ -298,7 +292,6 @@ section {
 .products-section {
     text-align: center;
     padding-top: 1.5rem;
-    height: 100vh;
 }
 
 .products-section .texter {
@@ -324,6 +317,7 @@ section {
 
 .products-section ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
     padding-top: 1rem;
@@ -398,9 +392,15 @@ section {
         justify-content: center;
     }
 
+
     .featured-section .image-container .futared img {
         width: calc((100% - 0rem)/1);
     }
+
+    .products-section ul {
+        display: block;
+    }
+
 }
 
 @media (min-width:769px) and (max-width:1440px) {
