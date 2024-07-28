@@ -134,5 +134,107 @@ section {
     transition: .5s;
 }
 
+.scroll .left , .right {
+    font-size: 30px;
+    color: #1d1d1d;
+}
+
+.scroll .left {
+    position:absolute;
+    left: 100px;
+}
+.scroll .right {
+    position:absolute;
+    right:100px;
+}
+
+.scroll .right:hover {
+    font-size: 30px;
+    color: #ffffff;
+    background: #111;
+    border: 2px solid #1d1d1d;
+    border-radius: 50px;
+    padding: 12px 12px;
+    transition: .5s all;
+}
+
+.scroll .left:hover {
+    font-size: 30px;
+    color: #ffffff;
+    background: #111;
+    border: 2px solid #1d1d1d;
+    border-radius: 50px;
+    padding: 12px 12px;
+    transition: .5s all ;
+}
 
 
+
+
+@media (min-width:100px) and (max-width:768px) {
+
+    header{
+        display: flex;
+        text-align: center;
+        gap: 2rem;
+     }
+    .navmenu {
+        display: none;
+    }
+
+    .hero-text {
+        position: relative;
+        right: 0;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+
+
+    .hero-section {
+        background-position: center; 
+    }
+
+    .scroll {
+        display: none;
+    }
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+    .navmenu {
+        display: none;
+    }
+
+    .hero-text {
+        position: relative;
+        right: 0;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .hero-section {
+        background-position: center; 
+    }
+
+    .scroll {
+        display: none;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    .navmenu {
+        display: flex;
+    }
+
+  
+    .hero-text {
+        position: relative;
+        right: 0;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .hero-section {
+        background-position: center; 
+    }
+}
