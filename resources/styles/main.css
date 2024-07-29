@@ -31,14 +31,15 @@ header{
 }
 header .logo-name i {
     padding-right: 3rem;
-    cursor: pointer;
+    
+    color: #111;
 }
 .logo-name h2
  {
     font-size: 30px;
     font-weight: 400;
     font-style: italic;
-    cursor: pointer;
+
     font-family: "Gochi Hand", cursive;
  }
 .logo img {
@@ -91,7 +92,6 @@ header .logo-name i {
     color: #1d1d1d;
     font-size: 25px;
     transition: 0.41s all ease;
-    cursor: pointer;
 }
 /* endnav */
 /* start hero-section */
@@ -219,7 +219,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;  
-    cursor: pointer;
+    
     
 }
 
@@ -255,6 +255,7 @@ section {
     border: 2px solid white;
     border-radius: 50px;   
     padding: 15px 15px;
+    color: #111;
 }
 
 .featured-section .image-container .futared .icon2 {
@@ -316,7 +317,7 @@ section {
     font-size: 60px;
 }
 
-.products-section ul {
+.products-section .nav-menu-prodectus ul {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -324,7 +325,7 @@ section {
     padding-top: 1rem;
 }
 
-.products-section a {
+.products-section .nav-menu-prodectus a {
     color: #1d1d1d;
     font-size: 13px;
     text-transform: uppercase;
@@ -334,7 +335,7 @@ section {
     
 }
 
-.products-section a::after {
+.products-section .nav-menu-prodectus a::after {
     content: "";
     position: absolute;
     background-color:rgb(0, 0, 0);
@@ -347,7 +348,7 @@ section {
     
 }
 
-.products-section a:hover::after{
+.products-section .nav-menu-prodectus a:hover::after{
     width: 100%;
     transition: width 0.3s linear;
 }
@@ -368,11 +369,11 @@ section {
 }
 .products-section .container .box-container .box {
     outline: 1px solid #d9d9d9;
+    
 }
 
 .products-section .container .box-container .box img {
     width: 100%;
-    cursor: pointer;
 }
 
 
@@ -389,7 +390,6 @@ section {
     color: #5a5a5a;
     font-weight:400;
     text-transform: none;
-    cursor: pointer;
     
 }
 
@@ -397,7 +397,6 @@ section {
     font-family: "Yantramanav", sans-serif;
     font-size: 17px;
     font-weight: 600;
-    cursor: pointer;
 }
 
 .container .box-container .box .layer span {
@@ -497,7 +496,7 @@ section {
     line-height: 1;
     font-size: 3rem;
     border: 1px solid #727272;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 1rem 2rem;
     
 }
