@@ -11,6 +11,9 @@
     
 }
 /* start nav */
+html {
+    overflow-x: hidden;
+}
 
 header{
     position: fixed;
@@ -634,6 +637,177 @@ section {
 
 /* end collection-section */
 
+/* start best-fashion */
+
+
+
+.best-fashion .container .main {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.best-fashion .container .main p {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-flex;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    font-size: 11px;
+    line-height: 1.45455em;
+    color:#727272;
+    line-height: 1;
+    padding-bottom: 6rem;
+}
+
+.best-fashion .container .fashion {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.best-fashion .container .fashion a {
+    padding: 28px 37px 29px;
+    display: inline-flex;
+    margin: 0;
+    background-color: transparent;
+    position: relative;
+    box-shadow: none;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+
+
+.best-fashion .container .fashion .one {
+    font-family: Yantramanav, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 85px;
+    display: block;
+    z-index: 3;
+    
+}
+
+
+
+.best-fashion .container .fashion .two {
+    position: absolute;
+    top: 51px;
+    right: 1px;
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+}
+
+
+
+.best-fashion .container .fashion .one::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 1rem;
+    width: 100%;
+    height: calc(100% - 1px);
+    z-index: -3;
+    background: repeating-linear-gradient(transparent, transparent 130px, #d9d9d9 131px, #d9d9d9 131px);
+}
+
+/* end best-fashion */
+
+/* start-new-sale section */
+
+.new-sale .container .img-contain {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.new-sale .container .img-contain .images {
+    position: relative;
+    
+}
+
+.new-sale .container .img-contain .images .layer {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.new-sale .container .img-contain .images .layer h4 {
+    text-align: center;
+    color: #fff;
+    font-family: gochi hand, Sans-serif;
+    font-size: 320px;
+    line-height: .7em;
+    letter-spacing: -5px;
+    text-transform: capitalize;
+}
+
+.new-sale .container .img-contain .images .layer2 {
+    position:absolute;
+    top: 30%;
+    left: 8%;
+    line-height: 4rem;
+    
+}
+
+.new-sale .container .img-contain .images .layer2 h4 {
+    color: #000;
+    font-family: gochi hand, Sans-serif;
+    font-size: 170px;
+    font-weight: 500;
+    line-height: .7em;
+    letter-spacing: -5px;
+    text-transform: capitalize;
+}
+
+.new-sale .container .img-contain .images .layer2 p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #727272;
+    
+}
+
+.layer2 .snd-btn {
+    color: #111;
+    font-size: 14px;
+    font-family: Yantramanav, sans-serif;
+    font-weight: 900;
+    line-height: 1.28571em;
+    text-transform: uppercase;
+    border-radius: 0;
+    outline: 0;
+    transition: 1s;
+    padding: 21px 80px;
+    cursor: pointer;
+}
+
+.layer2 .snd-btn a {
+    color: black;
+}
+
+.new-sale .container .img-contain .images img {
+    width: 50vw;
+    height: auto;
+    
+}
+
+.layer2 .snd-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+/* end-new-sale section */
+
+
+
 /* start media query */
 @media (min-width:100px) and (max-width:768px) {
 
@@ -714,6 +888,27 @@ section {
         text-align: center;
         padding-left: 100px;
     }
+
+    .best-fashion .container .fashion .one {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .new-sale .container .img-contain {
+        flex-wrap: wrap;
+    }
+
+    .new-sale .container .img-contain .images img {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .new-sale .container .img-contain .images .layer h4 {
+        font-size: 150px;
+    }
+    .layer2 .snd-btn {
+        padding: 15px 30px;
+    }
 }
 
 @media (min-width:769px) and (max-width:1440px) {
@@ -755,6 +950,10 @@ section {
         height: 50vh;
     }
     
+    .best-fashion .container .fashion .one {
+        
+        font-size: 65px;
+    }
    
      
 }
