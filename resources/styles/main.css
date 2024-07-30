@@ -806,7 +806,29 @@ section {
 }
 /* end-new-sale section */
 
+/* start-brand-section */
 
+.brand  {
+    padding-top: 4px;
+    padding-bottom: 1rem;
+}
+.brand .brand-container {
+    display: flex;
+    align-items: center;
+
+}
+
+.brand .brand-container .imges {
+    outline: 1px solid rgba(0, 0, 0, .1);
+
+}
+
+.brand .brand-container .imges img {
+    width: 100%;
+    height: 100%;
+}
+
+/* end-brand-section */
 
 /* start media query */
 @media (min-width:100px) and (max-width:768px) {
@@ -909,6 +931,12 @@ section {
     .layer2 .snd-btn {
         padding: 15px 30px;
     }
+
+    .brand .brand-container {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (min-width:769px) and (max-width:1440px) {
@@ -953,6 +981,10 @@ section {
     .best-fashion .container .fashion .one {
         
         font-size: 65px;
+    }
+
+    .brand .brand-container .imges {
+        flex-wrap: wrap;
     }
    
      
