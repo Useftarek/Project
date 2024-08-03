@@ -1435,6 +1435,7 @@ input:hover::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+    
   }
 
   .featured-section .image-container .futared img {
@@ -1442,12 +1443,20 @@ input:hover::placeholder {
   }
 
   .products-section ul {
-    display: block;
+   display: block
   }
-  .products-section .container .box-container {
+ 
+  .products-section .container {
+    flex-wrap: wrap;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding-top: 1rem;
+  }
+
+  .products-section .container .box-container {
+    display: grid;
+    grid-template-columns: repeat(1,auto);
+    gap: 3px;
+    flex-wrap: wrap;
   }
 
   .products-section .container .box-container .box .layer {
@@ -1597,7 +1606,7 @@ input:hover::placeholder {
 
 }
 
-@media (max-width:1023px) {
+@media (min-width: 768px) and (max-width:1023px) {
 
   html {
     font-size: 18px;
